@@ -16,7 +16,7 @@ after_success: |
     git checkout -b gh-pages
     git add .
     git -c user.name='travis' -c user.email='travis' commit -m init
-    git push -f -q https://cirosantilli:$GITHUB_API_KEY@github.com/cirosantilli/gnuplot-examples-gh-pages gh-pages &2>/dev/null
+    git push -f -q https://cirosantilli:$GITHUB_API_KEY@github.com/ohgohgohg/gnuplot-examples-gh-pages gh-pages &2>/dev/null
     cd "$TRAVIS_BUILD_DIR"
   fi
 script:
@@ -27,7 +27,7 @@ deploy:
   # See: http://stackoverflow.com/questions/12343452/how-to-publish-artifacts-in-travis-ci?lq=1
   provider: releases
   api_key:
-    secure: "CXyM+zf35Jp/pBHd6VNq+f28ErfGQqhR3klorayXUx6mnITbJb0L+1kfWF3H9dMQc9sceHo3YPzLGlQp3UGtTWQbYAPqz1KQ5Sus2kTxc4aTeT5mdXaz3nZ8B6gkMC6Okwew6gyU6le35bxrJkc0NuXvKlYl92kYEMAconZLs5PY5ePGI6nr/t4NxfSUP3RKlFyx1+0GK+s3eViiKLR4aNMt774OUeZnzCmUOX617foVWWYN72jgXyPtBHe6IxogrUVkp4DoF0z2pcV/SwrNib56qTNk7YC7QSyhpW8LYlrCSNvVS0L/EvN5lTPmNFxcjouSCxAdp+t8g8j69c8Gnp35iz3Mpjsq/Lmh0WagEvBcpKU1u9cXf3jYBVWC0p7BK0X3A16BHCWbvA0rtoKlJJYKyHTrX3LiEiBc1Psb4jKtwLZkUgvML51JTl/vAEQQ0erN7EXP09xJouwmiB+gvCdBL+EWNV7jmTy9U1WLFWHzC6xeKc+ausXNCDd7xEwqXevJ1YrV/EQWM75TOOGKiEK8a56m/EEOiy8vixk7dkOHHmipe4qn1FiNNOHhrjWEo1O62RSNA6mociaMRJmnmaC4czqBC5TeTLfvjkmysO/7fKYJxndVDcX5652XBKT4aYjTkI9z7JwJ9ORddrmED5nGpmVRnjFUOMDTlU8GlT0="
+    secure: "QkksaMJDhmhYz3qHTToedlrsgNtwNrYnoHv8G6xR/FfhrzjFsp3Z5V9Ck7kE1fozvpqor0x8g2UyL6rPSqtr1arUBWrr39Sy3lTPVv5nLQ4MrsqtpNwN5yL6bRcsy9AZvS/7995ai+uzMpxhjGxC8CEPt6pAkZ6+e5cRCFbGY12kc+aF3YuNKxprl8KFJbl/kOecOL0QZWK2+5ktkl3jqH9rLo74KcAS+wrhOQwm5DOeagErIWk7phqMFR7xyEyhoCxp6OQ+cJybcGOsZ2KrsJgQ6kHLx5WkfJVIgrRl+A91HhoQ18M4pV8iuGLRpU74WdYWF1aA1Pt+3In6M7d+LTlEsRevLOWBAmOVlreaI5IkhMfOmzYIEpCq2aUCctiLriphuGtYAportCPTFUI2B0BHpCGm5Z6qsZ4iRgeLCkEtzeiGTAomEzsADoOsHXV5u8m4QL/NRVAc5SbZKeQGFDYH7X7xTmBdaa39Nn3PwL+uwGui0x7RXyO0RrSBW4/9N0Rth2FJM8r84ZIDMkn7IZySN6iR1NliZyBxOT3ySXCQn8HT67qnuR50I3a1R8eRYHBLgteh29Hf2IqVjnM+pTMn1+WH68v6WH58p0zLuZ3i+FiiT47Pd0KPfsrZcpbqGKG45EnudWQpoVP0h1XtWJVEGruDWUAuKYGcQ9vaw3o="
   file: gnuplot-examples.zip
   skip_cleanup: true
   on:
